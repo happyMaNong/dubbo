@@ -1,7 +1,5 @@
 package com.tlp.dubboapi.dto;
 
-import lombok.Data;
-
 import java.io.Serializable;
 
 /**
@@ -13,6 +11,7 @@ public class BmUser implements Serializable {
     private String id;
     private String name;
     private String age;
+    private String nickName;
 
     @Override
     public String toString() {
@@ -45,5 +44,13 @@ public class BmUser implements Serializable {
 
     public void setAge(String age) {
         this.age = age;
+    }
+
+    public String getNickName() {
+        return nickName;
+    }
+
+    public void setNickName(String nickName) {
+        this.nickName = nickName;
     }
 }
